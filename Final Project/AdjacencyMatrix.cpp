@@ -112,21 +112,22 @@ void Graph::showMatrix()
 int main()
 {
   Graph tryList(20);
-  tryList.addEdge(0, 1);
+  
   tryList.addEdge(0, 4);
   tryList.addEdge(0, 5);
-  tryList.addEdge(1, 2);
+  tryList.addEdge(1, 0);
   tryList.addEdge(1, 3);
-  tryList.addEdge(1, 5);
-  tryList.addEdge(5, 8);
+  tryList.addEdge(2, 1);
   tryList.addEdge(5, 6);
+  tryList.addEdge(5, 8);
   tryList.addEdge(6, 7);
   tryList.addEdge(6, 8);
   tryList.addEdge(8, 9);
-  tryList.addEdge(8, 12);
   tryList.addEdge(8, 16);
   tryList.addEdge(9, 10);
-  tryList.addEdge(9, 11);
+  tryList.addEdge(10, 11);
+  tryList.addEdge(10, 14);
+  tryList.addEdge(11, 12);
   tryList.addEdge(12, 13);
   tryList.addEdge(13, 14);
   tryList.addEdge(14, 15);
