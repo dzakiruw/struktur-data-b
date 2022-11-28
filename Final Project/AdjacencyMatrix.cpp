@@ -48,10 +48,12 @@ void Graph::BFS(int startVertex, int endVertex)
   while (!queue.empty())
   {
     int currVertex = queue.front();
+    //endVertex
     if (currVertex == endVertex)
     {
       break;
     }
+    //endVertex
     cout << "(V" << currVertex << ")";
     queue.pop_front();
 
@@ -77,7 +79,6 @@ void Graph::showMatrix()
     int through = 0;
     for (it = adjMatrix[i].begin(); it != adjMatrix[i].end(); ++it)
     {
-      // int track = 0;
       int temp = *it;
       if (through == 0)
       {
@@ -135,7 +136,7 @@ int main()
   tryList.addEdge(17, 18);
   tryList.addEdge(18, 19);
 
-  // tryList.BFS(0, 19);
+  tryList.BFS(0, 19);
   cout << endl;
   tryList.showMatrix();
 
