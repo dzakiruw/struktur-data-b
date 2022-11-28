@@ -106,7 +106,7 @@ int main()
   tryList.addEdge(17, 18);
   tryList.addEdge(18, 19);
 
-  // tryList.BFS(0, 19);
+  tryList.BFS(0, 19);
   cout << endl;
   tryList.showList();
 
